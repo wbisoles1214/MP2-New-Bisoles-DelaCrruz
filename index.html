@@ -4,20 +4,28 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>KodeGo MP2 Browser</title>
   </head>
   <body>
-    <h1>Mozilla Google Chrome Nine Tail FireFox</h1>
-    <ul>
-      <li>Youtube</li>
-      <li>Facebook</li>
-      <li>Twitter</li>
-      <li>Instagram</li>
-      <li>Youtube</li>
-    </ul>
+    <img id="browser-logo" src="public/browser-logo.svg" alt="browser-logo" />
     <div class="container">
       <div class="gcse-search"></div>
     </div>
+
+    <div class="soc-media-container">
+      <img id="facebook-logo" src="public/facebook.svg" alt="facebook-logo" />
+      <img
+        id="instagram-logo"
+        src="public/instagram.svg"
+        alt="instagram-logo"
+      />
+      <img id="twitter-logo" src="public/twitter-logo.svg" alt="twitter-logo" />
+      <img id="youtube-logo" src="public/youtube-logo.svg" alt="youtube-logo" />
+    </div>
+
+    <div id="clock" onload="currentTime()">12:00</div>
+
     <script type="module" src="main.js"></script>
   </body>
 </html>
