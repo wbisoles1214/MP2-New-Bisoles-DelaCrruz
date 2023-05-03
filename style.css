@@ -8,7 +8,7 @@
 }
 
 body {
-  background-image: url(public/mp2-background-image.png);
+  background-image: url(public/background-image.svg);
   background-size: cover;
 }
 
@@ -19,6 +19,15 @@ body {
   align-items: center;
   width: 100vw;
   height: 25vh;
+}
+
+.gsc-control-cse {
+  border-radius: 15px;
+}
+
+.gsib_a {
+  width: 1000px;
+  height: 25px;
 }
 
 .gsc-control-cse {
@@ -48,7 +57,7 @@ body {
 #instagram-logo,
 #twitter-logo,
 #youtube-logo {
-  height: 8vh;
+  height: 3vh;
   width: auto;
   margin: 10px;
   cursor: pointer;
