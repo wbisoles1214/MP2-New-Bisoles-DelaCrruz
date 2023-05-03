@@ -8,7 +8,15 @@
     <title>KodeGo MP2 Browser</title>
   </head>
   <body>
+ logo
     <img id="browser-logo" src="public/web-l-logo.svg" alt="browser-logo" />
+
+    <header>
+      <label id="dark-change"></label>
+    </header>
+    <div class="respon"></div>
+    <img id="browser-logo" src="public/browser-logo.svg" alt="browser-logo" />
+ main
     <div class="container">
       <div class="gcse-search"></div>
     </div>
@@ -37,8 +45,8 @@
       /></a>
     </div>
 
-    <div id="clock" onload="currentTime()">12:00</div>
-
+    <h1 id="clock"></h1>
+    <script type="module" src="/src/clock.js"></script>
     <script type="module" src="main.js"></script>
   </body>
 </html>

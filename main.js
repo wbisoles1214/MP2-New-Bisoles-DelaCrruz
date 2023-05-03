@@ -1,3 +1,11 @@
+import { displayTime } from "./clock.js";
+displayTime();
+import { setupDarkMode } from "./darkmode.js";
+setupDarkMode();
+
+// update the time every second
+setInterval(displayTime, 1000);
+
 // Load the Google Custom Search Engine script asynchronously
 const script = document.createElement("script");
 script.async = true;
