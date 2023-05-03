@@ -18,9 +18,8 @@ export function displayTime() {
 
   // display the time
   document.getElementById("clock").textContent =
-    hours + ":" + minutes + ":" + seconds + " " + meridiem;
+    hours + ":" + minutes + " " + meridiem;
 }
 
 // update the time every second
 setInterval(displayTime, 1000);
-
