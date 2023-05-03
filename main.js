@@ -1,7 +1,7 @@
 import { displayTime } from "./clock.js";
-
-// display the time initially
 displayTime();
+import { setupDarkMode } from "./darkmode.js";
+setupDarkMode();
 
 // update the time every second
 setInterval(displayTime, 1000);
