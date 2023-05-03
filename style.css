@@ -8,7 +8,7 @@
 }
 
 body {
-  background-image: url(public/mp2-background-image.png);
+  background-image: url(public/background-image.svg);
   background-size: cover;
 }
 
@@ -25,6 +25,15 @@ body {
   width: 200px;
   height: 200px;
   border-radius: 50%;
+}
+
+.gsc-control-cse {
+  border-radius: 15px;
+}
+
+.gsib_a {
+  width: 1000px;
+  height: 25px;
 }
 
 .soc-media-container {
