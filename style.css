@@ -22,12 +22,18 @@ body {
 }
 
 .gsc-control-cse {
-  border-radius: 15px;
+  border-radius: 50px;
+  width: 100%;
 }
 
+/*
 .gsib_a {
-  width: 1000px;
-  height: 25px;
+  border-color: transparent;
+}
+*/
+
+.gsib_b {
+  width: 15dvw;
 }
 
 .soc-media-container {
