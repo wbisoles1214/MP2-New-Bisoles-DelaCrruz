@@ -30,15 +30,6 @@ body {
   height: 25px;
 }
 
-.gsc-control-cse {
-  border-radius: 15px;
-}
-
-.gsib_a {
-  width: 1000px;
-  height: 25px;
-}
-
 .soc-media-container {
   width: auto;
   height: 10vh;
@@ -67,6 +58,7 @@ body {
   color: whitesmoke;
   text-align: center;
   font-size: 50px;
+  font-weight: light;
   font-weight: bold;
 }
 
