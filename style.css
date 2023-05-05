@@ -7,9 +7,10 @@
   font-family: "Poppins", sans-serif;
 }
 
-body {
+header {
   background-image: url(public/background-image.svg);
   background-size: cover;
+  color: black;
 }
 
 .container {
@@ -28,12 +29,13 @@ body {
 
 /*
 .gsib_a {
-  border-color: transparent;
+  border-radius: 50px;
 }
 */
 
 .gsib_b {
   width: 15dvw;
+  border-radius: 50px;
 }
 
 .soc-media-container {
@@ -42,29 +44,30 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  gap: 20px;
 }
 
 #browser-logo {
-  height: 10vh;
-  width: 100vw;
+  height: 6vh;
+  width: 100dvw;
+
+  margin-top: 5px;
 }
 
 #facebook-logo,
 #instagram-logo,
 #twitter-logo,
 #youtube-logo {
-  height: 7vh;
+  height: 4vh;
   width: auto;
   margin: 10px;
   cursor: pointer;
 }
 
 #clock {
-  color: whitesmoke;
+  color: orange;
   text-align: center;
   font-size: 50px;
-  font-weight: light;
   font-weight: bold;
 }
 
