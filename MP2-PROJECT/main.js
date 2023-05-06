@@ -1,7 +1,8 @@
-import { displayTime } from "./clock.js";
+import { displayTime } from "./src/clock.js";
 displayTime();
-import { setupDarkMode } from "./darkmode.js";
+import { setupDarkMode } from "./src/darkmode.js";
 setupDarkMode();
+import fetchQuote from "./src/quotes.js";
 
 // update the time every second
 setInterval(displayTime, 1000);
@@ -23,3 +24,14 @@ script.addEventListener("load", () => {
     "AIzaSyDCCPQ4F535kWIbVLwDHFUWe7MAgyFsbKo"
   );
 });
+
+fetchQuote()
+  .then((quoteData) => {
+    const quoteContainer = document.getElementById("quote-container");
+    quoteContainer.innerHTML = `
+    <p>${quoteData[0].text}</p>
+    <h1>${quoteData[0].author}</h1>
+    `;
+  })
+
+  .catch((error) => console.log(error));
