@@ -1,4 +1,4 @@
-async function fetchQuote() {
+export async function fetchQuote() {
   try {
     const response = await fetch("https://type.fit/api/quotes");
     const quoteData = await response.json();
