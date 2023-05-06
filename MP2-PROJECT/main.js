@@ -4,7 +4,8 @@ import { setupDarkMode } from "./src/darkmode.js";
 setupDarkMode();
 import fetchQuote from "./src/quotes.js";
 import getRandomInt from "./src/utilities-function/getRandomInt.js";
-import { createClient } from "pexels";
+
+// You can use the weather object here
 
 // update the time every second
 setInterval(displayTime, 1000);
@@ -39,12 +40,4 @@ fetchQuote()
 
   .catch((error) => console.log(error));
 
-//background image API
-
-const client = createClient(
-  "9S7Rxx4vlv9ntvBA20rSVNG7hudSRLr8lko2hD1vxwgHdlV0eeEYNhxK"
-);
-
-client.photos.curated({ per_page: 1 }).then((photos) => {
-  console.log(photos);
-});
+// background image API
