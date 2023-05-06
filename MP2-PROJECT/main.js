@@ -3,6 +3,8 @@ displayTime();
 import { setupDarkMode } from "./src/darkmode.js";
 setupDarkMode();
 import fetchQuote from "./src/quotes.js";
+import getRandomInt from "./src/utilities-function/getRandomInt.js";
+import { createClient } from "pexels";
 
 // update the time every second
 setInterval(displayTime, 1000);
@@ -28,10 +30,21 @@ script.addEventListener("load", () => {
 fetchQuote()
   .then((quoteData) => {
     const quoteContainer = document.getElementById("quote-container");
+    const randomIndex = getRandomInt(0, quoteData.length - 1);
     quoteContainer.innerHTML = `
-    <p>${quoteData[0].text}</p>
-    <h1>${quoteData[0].author}</h1>
+    <p>${quoteData[randomIndex].text}</p>
+    <h1>${quoteData[randomIndex].author}</h1>
     `;
   })
 
   .catch((error) => console.log(error));
+
+//background image API
+
+const client = createClient(
+  "9S7Rxx4vlv9ntvBA20rSVNG7hudSRLr8lko2hD1vxwgHdlV0eeEYNhxK"
+);
+
+client.photos.curated({ per_page: 1 }).then((photos) => {
+  console.log(photos);
+});
