@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700;900&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;1,100;1,300;1,400&family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-image: url("https://source.unsplash.com/1600x900/?landscape");
+  background-size: cover;
+  color: black;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 25vh;
+}
+
+.gsc-control-cse {
+  border-radius: 50px;
+  height: 75px;
+  width: 100%;
+}
+
+/*
+.gsib_a {
+  border-radius: 50px;
+}
+*/
+
+.gsib_b {
+  width: 15dvw;
+  border-radius: 50px;
+}
+
+.soc-media-container {
+  width: auto;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+#browser-logo {
+  height: 6vh;
+  width: 100dvw;
+  margin-top: 5px;
+}
+
+#facebook-logo,
+#instagram-logo,
+#twitter-logo,
+#youtube-logo,
+#map-pin-logo {
+  height: 4vh;
+  width: auto;
+  margin: 10px;
+  cursor: pointer;
+}
+
+#clock {
+  color: #fff;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.card {
+  background: #000000d0;
+  color: white;
+  padding: 2em;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 420px;
+  margin: 1em;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  margin: 0.5em;
+  border-radius: 50%;
+  border: none;
+  height: 44px;
+  width: 44px;
+  outline: none;
+  background: #7c7c7c2b;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+input.search-bar {
+  border: none;
+  outline: none;
+  padding: 0.4em 1em;
+  border-radius: 24px;
+  background: #7c7c7c2b;
+  color: white;
+  font-family: inherit;
+  font-size: 105%;
+  width: calc(100% - 100px);
+}
+
+button:hover {
+  background: #7c7c7c6b;
+}
+
+h1.temp {
+  margin: 0;
+  margin-bottom: 0.4em;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.description {
+  text-transform: capitalize;
+  margin-left: 8px;
+}
+
+.weather.loading {
+  visibility: hidden;
+  max-height: 20px;
+  position: relative;
+}
+
+.weather.loading:after {
+  visibility: visible;
+  content: "Loading...";
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 20px;
+}
+
+#quote-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 22px;
+  width: auto;
+  height: 300px;
+  padding: 265px 5px 0px 5px;
+  font-style: italic;
+  color: white;
+}
+
+#quote-container > h1 {
+  font-size: 18px;
+}
+/*
+#quote-container > p {
+  position: absolute;
+  bottom: 0;
+  height: ;
+  width: 18em;
+  right: -5em;
+  left: 12%;
+}
+
+#quote-container > h1 {
+  position: absolute;
+  bottom: -25%;
+  width: 11em;
+  left: 23%;
+  font-weight: bold;
+  font-size: 18px;
+}
+*/
+main {
+  margin: 5vh 15%;
+}
+
+label {
+  position: absolute;
+  width: 45px;
+  height: 22px;
+  right: 20px;
+  top: 20px;
+  border: 2px solid;
+  border-radius: 20px;
+}
+label:before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  left: 1px;
+  top: 1px;
+  border-radius: 50%;
+  background: #000;
+  cursor: pointer;
+  transition: 0.4s;
+}
+label.active:before {
+  left: 24px;
+  background: #fff;
+}
+body.night {
+  background: #000;
+  color: #fff;
+}
