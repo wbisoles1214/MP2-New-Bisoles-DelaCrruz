@@ -48,9 +48,8 @@ body {
 }
 
 #browser-logo {
-  height: 6vh;
+  height: 20vh;
   width: 100dvw;
-  margin-top: 5px;
 }
 
 #facebook-logo,
@@ -58,7 +57,7 @@ body {
 #twitter-logo,
 #youtube-logo,
 #map-pin-logo {
-  height: 4vh;
+  height: 8vh;
   width: auto;
   margin: 10px;
   cursor: pointer;
@@ -72,13 +71,14 @@ body {
 }
 
 .card {
-  background: #000000d0;
-  color: white;
+  background: transparent;
+  color: #fff;
   padding: 2em;
   border-radius: 30px;
   width: 100%;
   max-width: 420px;
   margin: 1em;
+  margin-left: 36%;
   justify-content: center;
 }
 
@@ -181,36 +181,3 @@ h1.temp {
   font-size: 18px;
 }
 */
-main {
-  margin: 5vh 15%;
-}
-
-label {
-  position: absolute;
-  width: 45px;
-  height: 22px;
-  right: 20px;
-  top: 20px;
-  border: 2px solid;
-  border-radius: 20px;
-}
-label:before {
-  position: absolute;
-  content: "";
-  width: 20px;
-  height: 20px;
-  left: 1px;
-  top: 1px;
-  border-radius: 50%;
-  background: #000;
-  cursor: pointer;
-  transition: 0.4s;
-}
-label.active:before {
-  left: 24px;
-  background: #fff;
-}
-body.night {
-  background: #000;
-  color: #fff;
-}
