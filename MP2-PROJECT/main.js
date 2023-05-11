@@ -18,7 +18,7 @@ document
     }
   });
 
-weather.fetchWeather("Zamboanga");
+// weather.fetchWeather("Zamboanga");
 
 // update the time every second
 setInterval(displayTime, 1000);
