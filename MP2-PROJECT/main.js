@@ -4,21 +4,6 @@ import { setupDarkMode } from "./src/darkmode.js";
 setupDarkMode();
 import fetchQuote from "./src/quotes.js";
 import getRandomInt from "./src/utilities-function/getRandomInt.js";
-import { weather } from "./src/weather.js";
-
-document.querySelector(".search button").addEventListener("click", function () {
-  weather.search();
-});
-
-document
-  .querySelector(".search-bar")
-  .addEventListener("keyup", function (event) {
-    if (event.key == "Enter") {
-      weather.search();
-    }
-  });
-
-// weather.fetchWeather("Zamboanga");
 
 // update the time every second
 setInterval(displayTime, 1000);
