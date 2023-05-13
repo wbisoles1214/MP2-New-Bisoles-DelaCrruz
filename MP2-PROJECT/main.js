@@ -31,7 +31,7 @@ fetchQuote()
     const quoteContainer = document.getElementById("quote-container");
     const randomIndex = getRandomInt(0, quoteData.length - 1);
     quoteContainer.innerHTML = `
-    <p>${quoteData[randomIndex].text}</p>
+    <p>"${quoteData[randomIndex].text}"-</p>
     <h1>${quoteData[randomIndex].author}</h1>
     `;
   })
